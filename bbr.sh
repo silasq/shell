@@ -12,3 +12,5 @@ grub2-set-default 0
 #open bbr
 echo "net.core.default_qdisc = fq" >> /etc/sysctl.conf
 echo "net.ipv4.tcp_congestion_control = bbr" >> /etc/sysctl.conf
+
+echo "reboot is request!"
