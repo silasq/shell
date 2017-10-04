@@ -7,4 +7,6 @@ echo $pass|passwd --stdin root
 sed -i "s/PermitRootLogin no/PermitRootLogin yes/" /etc/ssh/sshd_config
 sed -i "s/PasswordAuthentication no/PasswordAuthentication yes/" /etc/ssh/sshd_config
 sed -i "s/ChallengeResponseAuthentication no/ChallengeResponseAuthentication yes/" /etc/ssh/sshd_config
+
+# restart ssh service
 service sshd restart
