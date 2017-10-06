@@ -1,3 +1,6 @@
+# timezome set
+timedatectl set-timezone Asia/Shanghai
+
 # change root password
 echo "passwd:"
 read pass
